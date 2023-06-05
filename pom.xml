@@ -14,9 +14,44 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <java.version>17</java.version>
+
+        <guice.version>7.0.0</guice.version>
     </properties>
 
-    <dependencies/>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.classgraph</groupId>
+            <artifactId>classgraph</artifactId>
+            <version>4.8.158</version>
+        </dependency>
+
+        <!--        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            &lt;!&ndash; {extension-name} can be one of: assistedinject, dagger-adapter,
+                 grapher, jmx, jndi, persist, spring, testlib or throwingproviders &ndash;&gt;
+            <artifactId>guice-testlib</artifactId>
+            &lt;!&ndash; {version} must match the guice core version. &ndash;&gt;
+            <version>${guice.version}</version>
+        </dependency>-->
+    </dependencies>
 
     <build>
         <plugins>
